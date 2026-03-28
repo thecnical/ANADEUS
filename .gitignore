@@ -1,0 +1,49 @@
+# ──────────────────────────────────────────────────
+# ANADEUS — Git Ignore Configuration
+# ──────────────────────────────────────────────────
+
+# ─── Secrets ─────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ─── Dependencies ────────────────────────────────
+node_modules/
+
+# ─── Output & Workspace ─────────────────────────
+workspace/
+workspace_validation_*/
+logs/
+
+# ─── Build Artifacts ─────────────────────────────
+coverage/
+dist/
+*.tgz
+
+# ─── Python ──────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# ─── Logs ────────────────────────────────────────
+*.log
+npm-debug.log*
+
+# ─── OS Files ────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ─── IDE ─────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ─── Tool-generated ─────────────────────────────
+.zencoder/
+.zenflow/

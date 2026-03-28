@@ -1,0 +1,50 @@
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background:
+    radial-gradient(circle at top right, rgba(8, 145, 178, 0.16), transparent 35%),
+    radial-gradient(circle at top left, rgba(244, 63, 94, 0.14), transparent 25%),
+    linear-gradient(180deg, #020617 0%, #020617 100%);
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.glass-card {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.88), rgba(2, 6, 23, 0.92));
+  border: 1px solid rgba(34, 211, 238, 0.12);
+  box-shadow: 0 20px 80px rgba(2, 6, 23, 0.45);
+  backdrop-filter: blur(14px);
+}
+
+.grid-shell {
+  background-image:
+    linear-gradient(rgba(34, 211, 238, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 211, 238, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.report-markdown h1,
+.report-markdown h2,
+.report-markdown h3 {
+  color: #e2e8f0;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.report-markdown p,
+.report-markdown li {
+  color: #cbd5e1;
+  line-height: 1.65;
+}
+
+.report-markdown ul,
+.report-markdown ol {
+  padding-left: 1.25rem;
+}
+
+.log-line {
+  border-left: 2px solid rgba(34, 211, 238, 0.22);
+  padding-left: 0.75rem;
+}

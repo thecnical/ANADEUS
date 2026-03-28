@@ -1,0 +1,42 @@
+{
+  "name": "anadeus",
+  "version": "1.0.0",
+  "description": "ANADEUS - AI-assisted cybersecurity orchestration platform for ethical security testing.",
+  "type": "module",
+  "bin": {
+    "anadeus": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node ./src/index.js",
+    "banner": "node ./src/index.js banner",
+    "chat": "node ./src/index.js chat",
+    "agent": "node ./src/index.js agent",
+    "auto": "node ./src/index.js auto",
+    "dashboard": "node ./dashboard/backend/server.js",
+    "dashboard:css": "tailwindcss -i ./dashboard/frontend/styles/input.css -o ./dashboard/frontend/tailwind.css --content ./dashboard/frontend/**/*.{html,js} --minify",
+    "test": "node --test"
+  },
+  "keywords": [
+    "cybersecurity",
+    "cli",
+    "ethical-hacking",
+    "bug-bounty",
+    "orchestration"
+  ],
+  "author": "Chandan Pandey",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^14.0.1",
+    "express": "^5.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

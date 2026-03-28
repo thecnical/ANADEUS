@@ -133,19 +133,21 @@ WebProbe  ·  SocketProbe  ·  RouteProbe  ·  and more...
 ### Installation
 
 ```bash
-# 1. Clone
+# 1. Clone the repository
 git clone https://github.com/thecnical/ANADEUS.git
 cd ANADEUS
 
-# 2. Install dependencies
+# 2. Install Node.js dependencies (CRITICAL: Required for CLI)
 npm install
-pip install -r requirements.txt
 
-# 3. Configure API keys
+# 3. Install Python dependencies (with Kali Linux fix)
+pip install -r requirements.txt --break-system-packages
+
+# 4. Configure API keys
 cp .env.example .env
 # → Edit .env with your keys (see API Configuration below)
 
-# 4. Verify
+# 5. Verify installation
 npm run banner
 ```
 

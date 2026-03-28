@@ -203,9 +203,26 @@ node src/index.js auto --target example.com --deep
 node src/index.js auto --target example.com --mode light
 ```
 
-### 🎯 Individual Phase Commands
+### 💬 Interactive Console
 
-Run specific phases manually:
+If you want the terminal to stay open so you can type multiple commands, start the interactive chat mode:
+
+```bash
+node src/index.js
+# or
+node src/index.js chat
+```
+
+Then you can type commands directly into the ANADEUS prompt:
+```text
+> @recon example.com
+> @scan example.com
+> /show recon
+```
+
+### 🎯 Single-Shot Commands (Exits when done)
+
+Run specific phases manually from your normal terminal:
 
 ```bash
 @recon example.com          # Subdomain enum + alive detection + tech fingerprinting
